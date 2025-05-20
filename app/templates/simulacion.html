@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Simulacion logica.</title>
+</head>
+<body>
+
+  <section id="welcome">
+    <header>   
+      <nav class ="menu">
+        <a href="index.html">Inicio</a>
+        <a href="teoria.html">Teoria</a>
+        <a href="simulacion.html">Simulacion</a>
+        <a href="aplicaciones.html">Aplicaciones</a>
+      </nav>
+    </header>
+
+    <main class="simulador-container">
+      <h1>Simulador Lógico: Clásico vs Cuántico</h1>
+      <h2>Simulador Interactivo</h2>
+      <p>Prueba cómo funcionan las operaciones lógicas clásicas y cuánticas básicas.</p>
+
+      <div class="simulador-box">
+        <h3>🔢 Lógica Clásica (AND)</h3>
+        <label for="bit1">Bit A:</label>
+        <select id="bit1">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+
+        <label for="bit2">Bit B:</label>
+        <select id="bit2">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+
+        <button onclick="simularAND()">Calcular</button>
+        <p id="resultado-classic">Resultado: </p>
+      </div>
+
+      <div class="simulador-box">
+        <h3>🌀 Qubit (Superposición simulada)</h3>
+        <p>Haz clic para aplicar la puerta Hadamard al qubit |0⟩</p>
+        <button onclick="simularHadamard()">Aplicar Hadamard</button>
+        <p id="resultado-quantum">Resultado: </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Proyecto final – Física para Informática</p>
+    </footer>
+  </section>
+
+  <script src="../../doc/script.js"></script>
+</body>
+</html>
